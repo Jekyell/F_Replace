@@ -10,5 +10,16 @@
 任务
 战斗中的从者状态和技能名称
 ```
+### 文本替换
+  下载 https://github.com/Jekyell/mappings/tree/main/F_Replace 里面的文件，放入到`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/F_Replace/`
 
-下载 https://github.com/Jekyell/mappings/tree/main/F_Replace 里面的文件，放入到`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/F_Replace/`
+
+### 头像替换
+
+* **存放路径**：`Mod/Figure/Faces/`
+* **格式与尺寸**：PNG，256×256 或 512×512
+* **命名规则**：`从者ID_灵基突破数.png`
+
+  * 例如：`204300_0.png` → 替换芭万希的 0 破头像
+
+
