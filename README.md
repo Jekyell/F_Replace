@@ -1,6 +1,9 @@
 # F_Replace
-补全以下翻译
+替换以下
 ```
+从者图片，立绘
+剧情文本替换
+技能替换
 从者简介
 礼装描述
 指令纹章描述
@@ -12,7 +15,7 @@
 战斗中的从者状态和技能名称
 ```
 ### 文本替换
-  下载 https://github.com/Jekyell/mappings/tree/main/F_Replace 里面的文件，放入到`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/F_Replace/`
+  下载 https://github.com/Jekyell/mappings/tree/main 里面的文件，放入到`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
 
 
 ### 头像替换
