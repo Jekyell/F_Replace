@@ -22,9 +22,6 @@
 1. 使用前请关闭所有替换magisk模块
 2. 剧情文本不再使用打包后的Script文件，而是可以直接使用解包后的剧情文件，放在Mod/Script文件夹里
 
-### 文本替换
-  下载 https://github.com/Jekyell/mappings/tree/main 里面的文件，放入到`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
-
 
 ### 头像替换
 
