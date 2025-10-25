@@ -1,8 +1,6 @@
 # F_Replace
 替换以下
 ```
-从者图片，立绘
-剧情文本替换
 技能替换
 从者简介
 礼装描述
@@ -18,10 +16,6 @@
 ### 使用方法
 下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在Mod文件夹
 
-注意：
-1. 使用前请关闭所有其他fgo替换magisk模块
-2. 剧情文本不再使用打包后的Script文件，而是可以直接使用解包后的剧情文件，放在Mod/Script文件夹里
-
 
 ### 头像替换
 
@@ -33,4 +27,3 @@
 
 psd文件：https://github.com/Jekyell/F_Replace/releases/download/v7/fgo_Avatar.psd
 
-频道：https://t.me/fgomod
