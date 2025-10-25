@@ -19,7 +19,7 @@
 下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在Mod文件夹
 
 注意：
-1. 使用前请关闭所有替换magisk模块
+1. 使用前请关闭所有其他fgo替换magisk模块
 2. 剧情文本不再使用打包后的Script文件，而是可以直接使用解包后的剧情文件，放在Mod/Script文件夹里
 
 
