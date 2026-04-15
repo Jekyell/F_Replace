@@ -14,7 +14,7 @@
 ```
 
 ### 使用方法
-下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在Mod文件夹
+下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/` 文件夹
 
 
 ### 头像替换
