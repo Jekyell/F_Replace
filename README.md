@@ -27,3 +27,5 @@
 
 psd文件：https://github.com/Jekyell/F_Replace/releases/download/v7/fgo_Avatar.psd
 
+https://t.me/fgomod
+
