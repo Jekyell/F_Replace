@@ -25,7 +25,5 @@
 
   * 例如：`204300_0.png` → 替换芭万希的 0 破头像
 
-psd文件：https://github.com/Jekyell/F_Replace/releases/download/v7/fgo_Avatar.psd
-
 https://t.me/fgomod
 
