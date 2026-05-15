@@ -25,5 +25,26 @@
 
   * 例如：`204300_0.png` → 替换芭万希的 0 破头像
 
+
+
+
+### 剧情文本配套工具 (FGSB Tool)
+
+工具下载： [FGSB Tool](https://github.com/Jekyell/F_Replace/releases/tag/tools)
+
+**封包（将文件夹打包为 fgsb）：**
+```bash
+./fgsb_tool.exe pack ./剧情文件夹 20250209.fgsb
+
+```
+**解包（将 fgsb 解压为文件夹）：**
+
+```bash
+./fgsb_tool.exe unpack 20250209.fgsb ./剧情文件夹
+
+```
+
+将打包好的 .fgsb 文件放入 Mod/ScriptBundle/ 目录下即可实现单文件剧情文本替换。与原有的单txt剧情文本替换功能兼容，模块会优先读取 Mod/Script/ 目录下的 txt 文件
+
 https://t.me/fgomod
 
