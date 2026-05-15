@@ -19,6 +19,10 @@
 下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
 并将Mod文件夹和他的子文件/子文件夹权限设置为777
 
+### 模块自定义开关
+游戏启动后，会自动在 Mod/configs/ 目录下生成 frep.config 配置文件。
+可在文件中根据需求手动设置各功能的开启 (1) 或关闭 (0)。
+
 ### 头像替换
 
 * **存放路径**：`Mod/Figure/Faces/`
@@ -26,8 +30,6 @@
 * **命名规则**：`从者ID_灵基突破数.png`
 
   * 例如：`204300_0.png` → 替换芭万希的 0 破头像
-
-
 
 
 ### 剧情文本配套工具 (FGSB Tool)
