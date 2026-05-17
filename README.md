@@ -50,5 +50,27 @@
 
 将打包好的 .fgsb 文件放入 Mod/ScriptBundle/ 目录下即可实现单文件剧情文本替换。与原有的单txt剧情文本替换功能兼容，模块会优先读取 Mod/Script/ 目录下的 txt 文件
 
+### 自定义加载图像功能
+
+操作步骤：
+1. 创建 /Mod/Figure/Load 目录
+2. 在该目录中放置精灵图像文件及 JSON 配置文件（例如附件中的 animation.json 和 animation.png ）
+
+补充说明：
+frep.config 配置文件新增以下选项：
+```
+# 自定义加载动画图像位置配置 (单位: DP)
+# 功能开关
+LoadingOverlay=1
+# 右侧边距
+MARGIN_RIGHT=45
+# 底部边距
+MARGIN_BOTTOM=14
+# 图像尺寸
+IMAGE_SIZE=150
+# 每秒播放的动画帧数
+FPS=24
+```
+
 https://t.me/fgomod
 
