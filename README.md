@@ -75,7 +75,7 @@ FPS=24
 ### 动图/单图卡面替换功能
 本次更新功能属于实验性功能，可能会造成内存/显存溢出，或其他未知错误。
 
-适用范围：Face，NarrowFigure，CharaGraph
+适用范围：Face，NarrowFigure，CharaGraph，Charafigure(不支持webp动图)，Status(不支持webp动图)
 
 使用说明： 统一命名规范为 [从者id]@突破数.png/webp，如奥尔加玛丽满破：4000100@4.png/webp（突破数范围为 1~4）。
 
