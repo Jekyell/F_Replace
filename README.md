@@ -69,7 +69,7 @@ MARGIN_BOTTOM=14
 # 图像尺寸
 IMAGE_SIZE=150
 # 每秒播放的动画帧数
-FPS=24
+LoadingFPS=24
 ```
 
 ### 动图/单图卡面替换功能
