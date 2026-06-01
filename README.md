@@ -87,5 +87,22 @@ LoadingFPS=24
 下载后请在 Mod/Figure 文件夹里面创建对应的压缩包文件夹，把图片解压进去  
 若在模拟器使用发现卡面不够清晰，可以模拟器设置里调高分辨率  
 
+| 类型             | 支持格式                                   | 优先级                                   | 备注                              |
+| -------------- | -------------------------------------- | ------------------------------------- | ------------------------------- |
+| `CharaGraph`   | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | 支持动图 MP4/WebP                   |
+| `CharaFigure`  | `.png`, `.astc`, `.astc.zstd`          | `png` → `astc` → `astc.zstd`          | 不支持 MP4/WebP；偏静态立绘/资源替换         |
+| `NarrowFigure` | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | MP4/WebP/PNG 都会保留窄图切角逻辑；切角为四个角  |
+| `Face`         | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | MP4/WebP 动画头像；PNG 静态头像；切角为左上+右上 |
+| `Status`       | `.webp`, `.png`, `.astc`, `.astc.zstd` | `webp` → `png` → `astc` → `astc.zstd` | 支持 WebP 优先；不支持 MP4              |
+
+
+### 帧率解锁功能
+```
+#是否开启解锁FPS功能项（0关闭，1开启）
+UnlockFPS=0
+#帧率
+FPS=60
+```
+
 频道：https://t.me/fgomod
 
