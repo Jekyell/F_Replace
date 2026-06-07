@@ -1,19 +1,5 @@
 # F_Replace
-替换以下
-```
-技能替换
-从者简介
-礼装描述
-指令纹章描述
-礼装筛选界面
-强化技能
-强化宝具
-加载界面提示
-任务
-战斗中的从者状态和技能名称
-优化界面切换黑屏过渡
-优化个人空间加载速度
-```
+
 
 ### 使用方法
 下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
@@ -89,11 +75,11 @@ LoadingFPS=24
 
 | 类型             | 支持格式                                   | 优先级                                   | 备注                              |
 | -------------- | -------------------------------------- | ------------------------------------- | ------------------------------- |
-| `CharaGraph`   | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | 支持动图 MP4/WebP                   |
-| `CharaFigure`  | `.png`, `.astc`, `.astc.zstd`          | `png` → `astc` → `astc.zstd`          | 不支持 MP4/WebP；偏静态立绘/资源替换         |
-| `NarrowFigure` | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | MP4/WebP/PNG 都会保留窄图切角逻辑；切角为四个角  |
-| `Face`         | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | MP4/WebP 动画头像；PNG 静态头像；切角为左上+右上 |
-| `Status`       | `.webp`, `.png`, `.astc`, `.astc.zstd` | `webp` → `png` → `astc` → `astc.zstd` | 支持 WebP 优先；不支持 MP4              |
+| `CharaGraph`   | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | -                   |
+| `CharaFigure`  | `.png`, `.astc`, `.astc.zstd`          | `png` → `astc` → `astc.zstd`          | -         |
+| `NarrowFigure` | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | 切角为四个角  |
+| `Face`         | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | 切角为左上+右上 |
+| `Status`       | `.webp`, `.png`, `.astc`, `.astc.zstd` | `webp` → `png` → `astc` → `astc.zstd` | -              |
 
 
 ### 帧率解锁功能
