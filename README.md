@@ -42,8 +42,7 @@
 1. 创建 /Mod/Figure/Load 目录
 2. 在该目录中放置精灵图像文件及 JSON 配置文件（例如附件中的 animation.json 和 animation.png  https://github.com/Jekyell/F_Replace/releases/tag/load ）
 
-补充说明：
-frep.config 配置文件新增以下选项：
+frep.config 配置项：
 ```
 # 自定义加载动画图像位置配置 (单位: DP)
 # 功能开关
