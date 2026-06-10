@@ -1,5 +1,12 @@
 # F_Replace
 
+> [!WARNING]
+> **Root access is required.**
+>
+> F_Replace only works on rooted Android devices or Android emulators with root privileges enabled.
+>
+> Please make sure your device or emulator has proper root access before installation.
+
 ## Usage
 
 Download all contents from:
