@@ -7,17 +7,18 @@
 >
 > Please make sure your device or emulator has proper root access before installation.
 
-## Usage
+Create the following directory structure:
 
-Download all contents from:
-
-https://github.com/Jekyell/mappings
-
-Place them into:
-
-`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
-
-Then set the permissions of the `Mod` folder and all its subfolders/files to `777`.
+```text
+/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/
+└── Figure/
+    ├── CharaFigure/
+    ├── CharaGraph/
+    ├── Faces/
+    ├── NarrowFigure/
+    ├── Status/
+    └── Load/
+```
 
 ---
 
