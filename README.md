@@ -2,6 +2,14 @@
 
 🌐 **English Documentation:** [README_EN.md](README_EN.md)
 
+> [!IMPORTANT]
+> **需要 Root 权限**
+>
+> 本模块仅支持已获取 Root 权限的 Android 设备或已开启 Root 功能的 Android 模拟器。
+>
+> 未 Root 的设备无法使用本模块。
+>
+> 安装前请确认 Root 权限已正常工作。
 
 ### 使用方法
 下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
