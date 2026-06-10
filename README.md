@@ -1,5 +1,7 @@
 # F_Replace
 
+🌐 **English Documentation:** [README_EN.md](README_EN.md)
+
 
 ### 使用方法
 下载 https://github.com/Jekyell/mappings 这个仓库里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
