@@ -86,7 +86,7 @@ LoadingFPS=24
 | `CharaFigure`  | `.png`, `.astc`, `.astc.zstd`          | `png` → `astc` → `astc.zstd`          | -         |
 | `NarrowFigure` | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | 切角为四个角  |
 | `Face`         | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | 切角为左上+右上 |
-| `Status`       | `.webp`, `.png`, `.astc`, `.astc.zstd` | `webp` → `png` → `astc` → `astc.zstd` | -              |
+| `Status`       | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | -              |
 
 
 ### 帧率解锁功能
