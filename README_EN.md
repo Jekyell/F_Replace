@@ -186,7 +186,7 @@ If the card art appears blurry in an emulator, increase the emulator's rendering
 | `CharaFigure` | `.png`, `.astc`, `.astc.zstd` | `png → astc → astc.zstd` | Static only |
 | `NarrowFigure` | `.mp4`, `.webp`, `.png` | `mp4 → webp → png` | Four-corner crop |
 | `Face` | `.mp4`, `.webp`, `.png` | `mp4 → webp → png` | Top-left + top-right crop |
-| `Status` | `.webp`, `.png`, `.astc`, `.astc.zstd` | `webp → png → astc → astc.zstd` | Static only |
+| `Status` | `.png`, `.astc`, `.astc.zstd` | `png → astc → astc.zstd` | Static only |
 
 ---
 
