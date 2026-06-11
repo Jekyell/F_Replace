@@ -68,6 +68,19 @@ LoadingFPS=24
 ```
 
 ### 动图/单图卡面替换功能
+
+请创建以下目录结构文件夹
+```text
+/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/
+└── Figure/
+    ├── CharaFigure/
+    ├── CharaGraph/
+    ├── Faces/
+    ├── NarrowFigure/
+    ├── Status/
+    └── Load/
+```
+
 本次更新功能属于实验性功能，可能会造成内存/显存溢出，或其他未知错误。
 
 适用范围：Face，NarrowFigure，CharaGraph，Charafigure(不支持动图)，Status(不支持动图)
