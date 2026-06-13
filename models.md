@@ -21,6 +21,7 @@
    👉 [官方下载地址](https://www.blender.org/download/)
 4. **Photoshop 或任意平面绘图软件**：用于修改和扩展图集。
 
+5. 相关附件下载 https://github.com/Jekyell/F_Replace/releases/tag/models
 ---
 
 ## 2. 修改流程详解
