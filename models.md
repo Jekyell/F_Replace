@@ -73,7 +73,7 @@
 ### 步骤四：脚本一键数据缝合
 
 1. 将 `old_mesh.txt`、`body_modified.obj` 和缝合脚本 `patch_mesh.py` 放置在同一个文件夹内。
-2. 打开 CMD 终端（或双击运行），输入命令运行脚本：
+2. 打开 CMD 终端，输入命令运行脚本：
    ```bash
    python patch_mesh.py
    ```
