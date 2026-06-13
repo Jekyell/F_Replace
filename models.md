@@ -49,7 +49,7 @@
 
 ---
 
-### 步骤三：Blender 3D 塑形与 UV 对齐 (3D & UV Modding)
+### 步骤三：Blender 3D 塑形与 UV 对齐
 
 1. 打开 Blender，按 `A` 全选并按 `Delete` 清空场景。
 2. 点击 **文件 -> 导入 -> FBX**，导入在步骤一中得到的 `.fbx` 文件。
