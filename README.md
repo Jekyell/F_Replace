@@ -110,5 +110,8 @@ UnlockFPS=0
 FPS=60
 ```
 
+### 模型修改
+https://github.com/Jekyell/F_Replace/blob/main/models.md
+
 频道：https://t.me/fgomod
 
