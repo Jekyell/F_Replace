@@ -110,6 +110,24 @@ UnlockFPS=0
 FPS=60
 ```
 
+### 御主头像与立绘替换
+
+* **存放路径**：
+  * 全局替换：`Mod/Figure/Master/Lock/`
+  * 单独替换：`Mod/Figure/Master/礼装ID/`（例如 `Mod/Figure/Master/equip00441/`）
+* **命名规则**：`face.mp4`/`face.png`（头像）、`figure.png`（立绘）、`figure_a.png`（立绘蒙版图）
+* **使用说明**：支持同比例高分辨率。若存在 `Lock` 文件夹，则优先全局替换。
+
+### 从者立绘表情锁定
+
+* **存放路径**：`Mod/Figure/CharaFigure/Lock/`
+* **使用说明**：放入此文件夹的立绘，其表情会被强制锁定在默认表情。此外，该文件夹下的立绘会被优先读取并替换。
+
+### 从者模型贴图替换
+
+* **存放路径**：`Mod/Models/`
+* **使用说明**：放入修改后的贴图文件，游戏加载战斗模型时会自动替换。
+
 ### 模型修改
 https://github.com/Jekyell/F_Replace/blob/main/models.md
 
