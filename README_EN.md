@@ -203,6 +203,30 @@ FPS=60
 
 ---
 
+## Master Portrait & Figure Replacement
+
+- **Directory:**
+  - Global Replacement: `Mod/Figure/Master/Lock/`
+  - Individual Replacement (by Mystic Code ID): `Mod/Figure/Master/[EquipID]/` (e.g., `Mod/Figure/Master/equip00441/`)
+- **Naming Convention:** `face.mp4` / `face.png` (Portrait), `figure.png` (Figure), `figure_a.png` (Figure Mask)
+- **Notes:** Supports high-resolution images/videos scaled proportionally. If the `Lock` directory exists, global replacement takes priority.
+
+---
+
+## Servant Figure Expression Locking
+
+- **Directory:** `Mod/Figure/CharaFigure/Lock/`
+- **Notes:** Figures placed in this folder will have their expressions locked to default. In addition, files in this folder have the highest priority and will be loaded first for replacement.
+
+---
+
+## Servant Model Texture Replacement
+
+- **Directory:** `Mod/Models/`
+- **Notes:** Place modified textures in this folder. The game will automatically replace them when loading battle models.
+
+---
+
 ## Telegram Channel
 
 https://t.me/fgomod
