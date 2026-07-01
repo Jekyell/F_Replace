@@ -15,6 +15,8 @@
 下载 https://github.com/Jekyell/mappings 这个仓库(日服汉化文件)里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
 并将Mod文件夹和他的子文件/子文件夹权限设置为777
 
+**注意，仓库是自动更新的，所以遇到新活动或内容请自行下载仓库覆盖到目录已保持新内容汉化**
+
 ### 模块自定义开关
 游戏启动后，会自动在 Mod/configs/ 目录下生成 frep.config 配置文件。
 可在文件中根据需求手动设置各功能的开启 (1) 或关闭 (0)。
