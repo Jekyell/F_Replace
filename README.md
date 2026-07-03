@@ -12,6 +12,10 @@
 > 安装前请确认 Root 权限已正常工作。
 
 ### 汉化文件使用方法
+
+点击模块图标进入软件界面，会自动下载更新汉化文件，可点击右上角文件列表选择忽略哪些文件/文件夹更新
+
+也可以手动下载更新：
 下载 https://github.com/Jekyell/mappings 这个仓库(日服汉化文件)里的所有内容放在 `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
 并将Mod文件夹和他的子文件/子文件夹权限设置为777
 
