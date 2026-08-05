@@ -96,6 +96,8 @@ LoadingFPS=24
 下载后请在 Mod/Figure 文件夹里面创建对应的压缩包文件夹，把图片解压进去  
 若在模拟器使用发现卡面不够清晰，可以模拟器设置里调高分辨率  
 
+一些charafigure在Form目录下，如 /sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/Figure/CharaFigure/Form/2/，请根据实际情况把需要替换的立绘放入对应的Form文件夹内
+
 | 类型             | 支持格式                                   | 优先级                                   | 备注                              |
 | -------------- | -------------------------------------- | ------------------------------------- | ------------------------------- |
 | `CharaGraph`   | `.mp4`, `.webp`, `.png`                | `mp4` → `webp` → `png`                | -                   |
