@@ -1,7 +1,5 @@
 # F_Replace
 
-🌐 **English Documentation:** [README_EN.md](README_EN.md)
-
 > [!IMPORTANT]
 > **需要 Root 权限**
 >
@@ -136,6 +134,10 @@ FPS=60
 ### 从者宝具替换
 * **存放路径**：`Mod/Np/`
 * **使用说明**：放入修改后的宝具文件，游戏加载宝具时会自动替换。
+
+# 关于国服的一些说明
+- 国服可以开启textreplace,masterdatareplace,localizationreplace,scriptreplace来进行文本替换，替换词文件在 https://t.me/fgomod/598
+- fontreplace不可用
 
 ### 模型修改
 https://github.com/Jekyell/F_Replace/blob/main/models.md
