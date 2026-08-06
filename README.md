@@ -83,9 +83,9 @@ FPS=60                    # 游戏帧率解锁目标值 (UnlockFPS=1 时生效)
 
 > [!NOTE]
 > **不同服务器 / 渠道服的 Mod 存放根路径**：
-> - 🇯🇵 **日服**：`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
-> - 🇨🇳 **B 服 (国服官服)**：`/sdcard/Android/data/com.bilibili.fatego/files/Mod/`
-> - 🎮 **4399 渠道服**：`/sdcard/Android/data/com.bilibili.fgo.m4399/files/Mod/`
+> - **日服**：`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
+> - **B 服**：`/sdcard/Android/data/com.bilibili.fatego/files/Mod/`
+> - **4399 渠道服**：`/sdcard/Android/data/com.bilibili.fgo.m4399/files/Mod/`
 
 完整的 `Mod/` 目录层级架构如下：
 
