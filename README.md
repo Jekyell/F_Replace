@@ -47,6 +47,31 @@
 -  国服可以开启`TextReplace`、`MasterDataReplace`、`LocalizationReplace`、`ScriptReplace` 来进行文本替换，替换词文件在 https://t.me/fgomod/598
 -  `FontReplace`不可用，请保持关闭（`0`）。
 
+#### 💡 自定义替换词文件 `anti_harmony.json` 结构说明
+
+```json
+{
+  "global": {
+    "全局通用替换词": "替换词"
+  },
+  "localization": {
+    "兽": "Beast"
+  },
+  "masterdata": {
+    "MasterData替换词": "替换词"
+  },
+  "script": {
+    "剧情替换词": "替换词"
+  },
+  "textreplace": {
+    "界面原文": "界面替换文本"
+  }
+}
+```
+
+> [!TIP]
+> **提示**：如果不清楚具体属于哪种分类（`localization`/`masterdata`/`script`/`textreplace`），直接写入 `"global"` 块中即可生效。
+
 ---
 
 ## ⚙️ 配置文件说明 (`frep.config`)
