@@ -181,7 +181,7 @@ Mod/
 - **读取逻辑**：打包后的 `.fgsb` 放入 `Mod/ScriptBundle/` 目录。模块会**优先**读取 `Mod/Script/` 目录下的 `.txt` 文件。推荐使用 App 自动拉取即可，非特殊情况没有使用fgsb文件的必要。
 
 ### 6. 自定义加载图像与动画
-
+- **制作参考与样例下载**：[自定义加载图制作参考](https://github.com/Jekyell/F_Replace/releases/tag/load)
 1. **配置步骤**：
    - 创建 `Mod/Figure/Load/` 目录。
    - 放入精灵图 `animation.png` 及配置文件 `animation.json`（可参考 [Load Release](https://github.com/Jekyell/F_Replace/releases/tag/load) 样例）。
