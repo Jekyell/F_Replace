@@ -124,7 +124,7 @@ Mod/
 
 | 资源类型 | 对应目录 | 支持格式 | 格式读取优先级 | 备注 |
 | :--- | :--- | :--- | :--- | :--- |
-| **从者卡面** (`CharaGraph`) | `Figure/CharaGraph/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 支持动态卡面 |
+| **从者卡面** (`CharaGraph`) | `Figure/CharaGraph/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | - |
 | **窄卡面** (`NarrowFigure`) | `Figure/NarrowFigure/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 四角切角 |
 | **头像** (`Face`) | `Figure/Faces/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 左上+右上切角 |
 | **状态立绘** (`Status`) | `Figure/Status/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | 不支持动图 |
