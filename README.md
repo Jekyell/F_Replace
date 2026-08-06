@@ -44,7 +44,7 @@
 ### 国服使用说明
 
 以下开关项需要特殊说明，其他的和日服相同：
--  国服可以开启`TextReplace`、`MasterDataReplace`、`LocalizationReplace`、`ScriptReplace` 来进行文本替换，替换词文件在 https://t.me/fgomod/598，替换词文件获取：[Telegram 频道消息](https://t.me/fgomod/598)
+-  国服可以开启`TextReplace`、`MasterDataReplace`、`LocalizationReplace`、`ScriptReplace` 来进行文本替换，替换词文件在 https://t.me/fgomod/598 ，替换词文件获取：[Telegram 频道消息](https://t.me/fgomod/598)
 -  `FontReplace`不可用，请保持关闭（`0`）。
 
 ---
