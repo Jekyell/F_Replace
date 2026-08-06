@@ -101,7 +101,7 @@ Mod/
 ├── configs/
 │   └── frep.config         # 模块核心配置文件
 ├── Figure/
-│   ├── CharaFigure/        # 从者战斗立绘 (Form/ 特殊版本, Lock/ 表情锁定)
+│   ├── CharaFigure/        # 从者立绘 (Form/ 特殊版本, Lock/ 表情锁定)
 │   ├── CharaGraph/         # 从者卡面
 │   ├── Faces/              # 从者头像
 │   ├── NarrowFigure/       # 窄版卡面
