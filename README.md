@@ -23,6 +23,7 @@
   - [表情锁定、模型与宝具替换](#4-表情锁定模型与宝具替换)
   - [剧情文本配套工具 (FGSB Tool)](#5-剧情文本配套工具-fgsb-tool)
   - [自定义加载图像与动画 (Load)](#6-自定义加载图像与动画-load)
+- [常见问题与故障排查](#-常见问题与故障排查-faq)
 - [相关链接与社区](#-相关链接与社区)
 
 ---
@@ -185,6 +186,23 @@ Mod/
    - 创建 `Mod/Figure/Load/` 目录。
    - 放入精灵图 `animation.png` 及配置文件 `animation.json`（可参考 [Load Release](https://github.com/Jekyell/F_Replace/releases/tag/load) 样例）。
 2. **位置与帧率调整**：在 `frep.config` 中调整 `LoadingOverlay=1`、`MARGIN_RIGHT`、`MARGIN_BOTTOM`、`IMAGE_SIZE` 和 `LoadingFPS`。位置调整支持负数。
+
+---
+
+## ❓ 常见问题与故障排查 (FAQ)
+
+### Q: MuMu 模拟器国际版启动游戏卡死/闪退怎么办？
+
+- **问题原因**：MuMu 模拟器国际版自带的系统翻译插件 (`com.mumu.acc`) 与本模块发生冲突。
+- **解决方法**：
+  1. 打开模拟器中的 **MT 管理器**。
+  2. 打开侧边栏的 **终端模拟器**。
+  3. 依次输入以下命令获取 Root 权限并禁用该翻译插件：
+     ```bash
+     su
+     pm disable com.mumu.acc
+     ```
+  4. 彻底重启模拟器（**注意**：需在电脑右下角的 Windows 系统托盘中右键退出 MuMu 模拟器主程序后重新打开）。
 
 ---
 
