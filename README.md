@@ -140,8 +140,8 @@ Mod/
 | `CharaGraph` | `Figure/CharaGraph/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 支持动态卡面 |
 | `NarrowFigure` | `Figure/NarrowFigure/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 切角为四个角 |
 | `Face` | `Figure/Faces/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 切角为左上 + 右上 |
-| `Status` | `Figure/Status/` | `.webp`, `.png`, `.astc`, `.astc.zstd` | `webp` → `png` → `astc` → `astc.zstd` | 支持 WebP 动图 |
-| `CharaFigure` | `Figure/CharaFigure/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | 不支持 MP4/WebP 动图 |
+| `Status` | `Figure/Status/` | `.webp`, `.png`, `.astc`, `.astc.zstd` |  `png` → `astc` → `astc.zstd` | - |
+| `CharaFigure` | `Figure/CharaFigure/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | - |
 
 ### 3. 御主头像与立绘
 
