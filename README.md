@@ -43,10 +43,9 @@
 
 ### 国服使用说明
 
-在国服环境使用时，可以在配置文件中针对性开关各功能：
-- **支持项**：可开启 `TextReplace`（文本替换）、`MasterDataReplace`（数据库替换）、`LocalizationReplace`（本地化替换）、`ScriptReplace`（剧情脚本替换）。
-  - 替换词文件获取：[Telegram 频道消息](https://t.me/fgomod/598)
-- **不可用项**：`FontReplace`（字体替换）在国服下不可用，请保持关闭（`0`）。
+以下开关项需要特殊说明，其他的和日服相同：
+-  国服可以开启`TextReplace`、`MasterDataReplace`、`LocalizationReplace`、`ScriptReplace` 来进行文本替换，替换词文件在 https://t.me/fgomod/598，替换词文件获取：[Telegram 频道消息](https://t.me/fgomod/598)
+-  `FontReplace`不可用，请保持关闭（`0`）。
 
 ---
 
