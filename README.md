@@ -70,13 +70,13 @@
 ```ini
 # 功能开关配置 (1=开启, 0=关闭)
 FadeOptimize=1            # 淡入淡出动画渲染优化
-TextReplace=1             # 界面及战斗通用文本替换
+TextReplace=1             # 通用文本替换
 FaceReplace=1             # 从者头像替换
 FontReplace=1             # 字体替换 (国服需设为 0)
 MasterDataReplace=1       # MasterData 替换
 ImageReplace=1            # 从者卡面/立绘/贴图图像替换
 LocalizationReplace=1     # 本地化多语言文本替换 (Mod/LocalizationJpn.txt)
-ScriptReplace=1           # 剧情脚本文本替换
+ScriptReplace=1           # 剧情文本替换
 LoadingOverlay=1          # 自定义加载动画显示
 MasterImageReplace=1      # 御主头像与立绘替换
 UnlockFPS=0               # 解锁游戏帧率
