@@ -86,8 +86,8 @@ UnlockFPS=0               # 解锁游戏帧率
 AutoCharaFigureDownload=0  # 从者立绘超分图集自动下载 (CharaFigure)
 AutoCharaGraphDownload=0   # 从者卡面超分图集自动下载 (CharaGraph)
 AutoNarrowFigureDownload=0  # 窄条头像超分图集自动下载 (NarrowFigure)
-AutoFaceDownload=0         # 战斗头像超分图集自动下载 (Face)
-AutoStatusDownload=0       # 状态详情图超分图集自动下载 (Status)
+AutoFaceDownload=0         # 头像超分图集自动下载 (Face)
+AutoStatusDownload=0       # 状态图超分图集自动下载 (Status)
 
 # 参数配置 (单位: DP, 边距可为负数)
 MARGIN_RIGHT=45           # 加载图右边距
