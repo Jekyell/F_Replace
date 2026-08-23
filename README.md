@@ -8,7 +8,7 @@
 - [快速开始](#快速开始)
   - [汉化文件更新](#汉化文件更新)
   - [国服使用说明](#国服使用说明)
-- [配置文件说明](#配置文件说明-frepconfig)
+- [配置文件说明 (frep.config)](#配置文件说明-frepconfig)
 - [Mod 目录结构](#mod-目录结构)
 - [资源替换指南](#资源替换指南)
   - [资源格式与优先级速查](#资源格式与优先级速查)
@@ -16,6 +16,7 @@
 - [工具与扩展功能](#工具与扩展功能)
   - [剧情文本打包工具 (FGSB Tool)](#剧情文本打包工具-fgsb-tool)
   - [自定义加载图像与动画](#自定义加载图像与动画)
+  - [超分图集自动下载 (AutoDownload)](#超分图集自动下载-autodownload)
 - [常见问题 (FAQ)](#常见问题-faq)
 - [相关链接](#相关链接)
 
@@ -24,7 +25,7 @@
 ### 汉化文件更新
 
 #### 方法一：自动更新（推荐）
-启动 App 进入主界面，模块会自动连接Github下载并增量更新汉化文件。可在右上角文件列表中勾选需忽略更新的文件或文件夹。
+启动 App 进入主界面，模块会自动连接 GitHub 下载并增量更新汉化文件。可在右上角文件列表中勾选需忽略更新的文件或文件夹。
 
 #### 方法二：手动更新
 1. 下载 [Jekyell/mappings](https://github.com/Jekyell/mappings) 仓库（日服汉化文件）的完整内容。
@@ -63,12 +64,12 @@
 *提示：textreplace覆盖面最广，会捕获当前界面上的所有文本，若不确定所属分类，直接写入 `global` 块即可。*
 </details>
 
-## 配置文件说明
+## 配置文件说明 (frep.config)
 
 首次启动游戏或初始化模块时，会在 `Mod/configs/` 目录下生成 `frep.config` 配置文件（`1` 为开启，`0` 为关闭）。
 
 ```ini
-# 功能开关配置 (1=开启, 0=关闭)
+# 核心功能开关 (1=开启, 0=关闭)
 FadeOptimize=1            # 淡入淡出动画渲染优化
 TextReplace=1             # 通用文本替换
 FaceReplace=1             # 从者头像替换
@@ -81,6 +82,13 @@ LoadingOverlay=1          # 自定义加载动画显示
 MasterImageReplace=1      # 御主头像与立绘替换
 UnlockFPS=0               # 解锁游戏帧率
 
+# 超分图集按需自动下载开关 (1=开启, 0=关闭，默认 0)
+AutoCharaFigureDownload=0  # 从者立绘超分图集自动下载 (CharaFigure)
+AutoCharaGraphDownload=0   # 从者卡面超分图集自动下载 (CharaGraph)
+AutoNarrowFigureDownload=0  # 窄条头像超分图集自动下载 (NarrowFigure)
+AutoFaceDownload=0         # 战斗头像超分图集自动下载 (Face)
+AutoStatusDownload=0       # 状态详情图超分图集自动下载 (Status)
+
 # 参数配置 (单位: DP, 边距可为负数)
 MARGIN_RIGHT=45           # 加载图右边距
 MARGIN_BOTTOM=14          # 加载图下边距
@@ -88,6 +96,7 @@ IMAGE_SIZE=150            # 加载图显示尺寸
 LoadingFPS=24             # 加载图动画播放帧率
 FPS=60                    # 目标帧率 (UnlockFPS=1 时生效)
 ```
+
 
 ## Mod 目录结构
 
@@ -99,20 +108,25 @@ FPS=60                    # 目标帧率 (UnlockFPS=1 时生效)
 ```text
 Mod/
 ├── configs/
-│   └── frep.config         # 模块核心配置文件
+│   └── frep.config             # 模块核心配置文件
 ├── Figure/
-│   ├── CharaFigure/        # 从者立绘 (Form/ 特殊版本, Lock/ 表情锁定)
-│   ├── CharaGraph/         # 从者卡面
-│   ├── Faces/              # 从者头像
-│   ├── NarrowFigure/       # 窄版卡面
-│   ├── Status/             # 状态立绘
-│   ├── Load/               # 自定义加载图像与动画
-│   └── Master/             # 御主头像与立绘 (Lock/ 全局锁定, equipXXXXX/ 按礼装)
-├── Models/                 # 从者战斗模型与贴图
-├── Np/                     # 从者宝具资源
-├── Script/                 # 单 .txt 剧情文本文件
-├── ScriptBundle/           # .fgsb 剧情打包文件
-└── LocalizationJpn.txt     # 本地化替换文本
+│   ├── CharaFigure/            # 从者立绘 (Form/ 特殊形态, Lock/ 表情锁定)
+│   │   └── AutoDownload/       # 自动下载超分图集缓存
+│   ├── CharaGraph/             # 从者卡面
+│   │   └── AutoDownload/       # 自动下载超分图集缓存
+│   ├── Faces/                  # 从者头像
+│   │   └── AutoDownload/       # 自动下载超分图集缓存
+│   ├── NarrowFigure/           # 窄版卡面
+│   │   └── AutoDownload/       # 自动下载超分图集缓存
+│   ├── Status/                 # 状态详情立绘
+│   │   └── AutoDownload/       # 自动下载超分图集缓存
+│   ├── Load/                   # 自定义加载图像与动画
+│   └── Master/                 # 御主头像与立绘 (Lock/ 全局锁定, equipXXXXX/ 按礼装)
+├── Models/                     # 从者战斗模型与贴图
+├── Np/                         # 从者宝具资源
+├── Script/                     # 单 .txt 剧情文本文件
+├── ScriptBundle/               # .fgsb 剧情打包文件
+└── LocalizationJpn.txt         # 本地化替换文本
 ```
 
 ## 资源替换指南
@@ -166,6 +180,17 @@ Mod/
 2. 放入精灵图 `animation.png` 及配置文件 `animation.json`。
 3. 在 `frep.config` 中开启 `LoadingOverlay=1` 并调整位置与帧率参数。
 
+
+## 超分图集自动下载
+
+开启后，游戏在加载对应从者资源时会自动按需拉取云端超分图集
+
+### 优先级与缓存说明
+> [!TIP]
+> - **本地 MOD 优先**：若本地对应目录已存在手动放置的自定义 MOD（例如 `Figure/CharaGraph/4000100@4.png`），将始终**优先读取本地 MOD**，不会触发该资源的自动下载，也不会被覆盖。
+> - **目录**：自动下载的超分图集统一保存在各子目录的 `AutoDownload/` 文件夹中（例如 `Figure/CharaGraph/AutoDownload/`），支持增量更新与网络异常自动重试。
+
+
 ## 常见问题 (FAQ)
 
 <details>
@@ -185,8 +210,16 @@ Mod/
   4. 彻底重启模拟器（需在 Windows 系统托盘右键退出 MuMu 模拟器主程序后重新打开）。
 </details>
 
+<details>
+<summary><b>Q: 开启超分图集自动下载后，自定义 MOD 会被覆盖吗？</b></summary>
+
+<br />
+
+- **不会**。模块遵循 **本地 MOD 优先** 原则，手动放置在各功能目录下的自定义 MOD 拥有最高优先级，不会被自动下载的超分图集覆盖。
+</details>
+
 ## 相关链接
 
 - [Telegram 频道](https://t.me/fgomod)
-- [全从者超清卡面图集](https://t.me/fgomod_1)
+- [超分图集全量包](https://t.me/fgomod_1)
 - [模型修改参考 (models.md)](https://github.com/Jekyell/F_Replace/blob/main/models.md)
