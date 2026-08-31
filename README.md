@@ -16,6 +16,7 @@
 - [工具与扩展功能](#工具与扩展功能)
   - [剧情文本打包工具 (FGSB Tool)](#剧情文本打包工具-fgsb-tool)
   - [自定义加载图像与动画](#自定义加载图像与动画)
+  - [剧情文本语音接口 (ScriptVoice)](#剧情文本语音接口-scriptvoice)
   - [超分图集自动下载 (AutoDownload)](#超分图集自动下载-autodownload)
 - [常见问题 (FAQ)](#常见问题-faq)
 - [相关链接](#相关链接)
@@ -78,6 +79,7 @@ MasterDataReplace=1       # MasterData 替换
 ImageReplace=1            # 从者卡面/立绘/贴图图像替换
 LocalizationReplace=1     # 本地化多语言文本替换 (Mod/LocalizationJpn.txt)
 ScriptReplace=1           # 剧情文本替换
+ScriptVoice=1             # 剧情文本语音播放
 LoadingOverlay=1          # 自定义加载动画显示
 MasterImageReplace=1      # 御主头像与立绘替换
 UnlockFPS=0               # 解锁游戏帧率
@@ -126,6 +128,7 @@ Mod/
 ├── Np/                         # 从者宝具资源
 ├── Script/                     # 单 .txt 剧情文本文件
 ├── ScriptBundle/               # .fgsb 剧情打包文件
+├── ScriptVoice/                # 剧情文本自定义语音
 └── LocalizationJpn.txt         # 本地化替换文本
 ```
 
@@ -179,6 +182,37 @@ Mod/
 1. 创建 `Mod/Figure/Load/` 目录。
 2. 放入精灵图 `animation.png` 及配置文件 `animation.json`。
 3. 在 `frep.config` 中开启 `LoadingOverlay=1` 并调整位置与帧率参数。
+
+### 剧情文本语音接口 (ScriptVoice)
+
+#### 一、文件放置
+创建 `Mod/ScriptVoice/` 文件夹，按剧情ID建文件夹：
+```text
+Mod/ScriptVoice/
+└─ 9415901010            ← 剧情ID
+   ├─ 1.mp3              ← 语音文件，文件名=编号
+   ├─ 2.mp3
+   ├─ 3.mp3
+   └─ Mapping/mapping.json   ← 映射表（也可直接放 9415901010/mapping.json，二选一）
+```
+
+- **语音格式支持**：`mp3` / `wav`
+
+#### 二、mapping.json 写法
+```json
+{
+  "id": "9415901010",
+  "1": [ { "jp": "日文原文", "cn": "中文翻译" } ],
+  "2": [ { "jp": "……", "cn": "……" } ]
+}
+```
+
+**规则**：
+1. 最外层的 `"1"`、`"2"`、`"3"` 是语音编号，必须和语音文件名对应（`1.mp3`、`2.mp3`…）。
+2. 数组条数随意，键名随便起（`jp`、`cn`、`en` 都行，只看值不看键名），不同语言的文本都指向同一个语音，换语言不用改音频。
+3. 文本必须和游戏里那句台词一字不差（含标点）。剧情里的 `[r]`、`[charaFace]` 这类控制符不用管，匹配时自动忽略所有 `[]` 控制符，JSON 里写干净的纯文本。
+
+- **示例配置下载**：[Telegram 示例配置](https://t.me/fgomod/818)
 
 
 ## 超分图集自动下载
