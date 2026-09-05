@@ -25,10 +25,17 @@
 
 ### 汉化文件更新
 
-#### 方法一：自动更新（推荐）
+#### 方法一：游戏启动自动更新（推荐，日服专属）
+直接打开游戏即可自动检查并更新 mapping 仓库，无需打开伴侣 App。
+
+- **开启方法**：在 `Mod/configs/frep.config` 中配置 `AutoMappingDownload=1`（默认 `0` 为关闭）。
+- **忽略文件配置**：如需忽略某些文件或文件夹，请自行创建 `Mod/.gitignore` 并自行配置，语法与 git 仓库 `.gitignore` 完全一致。
+- **首次启用说明**：首次启用会下载覆盖一次全量包，如有特殊需求请在启动游戏前提前配置好 `.gitignore`。
+
+#### 方法二：App 内自动更新
 启动 App 进入主界面，模块会自动连接 GitHub 下载并增量更新汉化文件。可在右上角文件列表中勾选需忽略更新的文件或文件夹。
 
-#### 方法二：手动更新
+#### 方法三：手动更新
 1. 下载 [Jekyell/mappings](https://github.com/Jekyell/mappings) 仓库（日服汉化文件）的完整内容。
 2. 解压并放入对应路径：
    `/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
@@ -84,7 +91,8 @@ LoadingOverlay=1          # 自定义加载动画显示
 MasterImageReplace=1      # 御主头像与立绘替换
 UnlockFPS=0               # 解锁游戏帧率
 
-# 超分图集按需自动下载开关 (1=开启, 0=关闭，默认 0)
+# 映射仓库与超分图集按需自动下载开关 (1=开启, 0=关闭，默认 0)
+AutoMappingDownload=0     # 游戏启动时自动更新 mapping 汉化仓库 (仅日服)
 AutoCharaFigureDownload=0  # 从者立绘超分图集自动下载 (CharaFigure)
 AutoCharaGraphDownload=0   # 从者卡面超分图集自动下载 (CharaGraph)
 AutoNarrowFigureDownload=0  # 窄条头像超分图集自动下载 (NarrowFigure)
@@ -109,6 +117,7 @@ FPS=60                    # 目标帧率 (UnlockFPS=1 时生效)
 
 ```text
 Mod/
+├── .gitignore                  # 自定义忽略更新文件规则 (语法与 git 一致，可选)
 ├── configs/
 │   └── frep.config             # 模块核心配置文件
 ├── Figure/
