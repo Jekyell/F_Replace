@@ -166,6 +166,8 @@ Mod/
      - **文件名**：以实际游戏文件名为主（不适用上述通用命名规范）。
      - **特定形态**：特殊立绘存放在 `Figure/CharaFigure/Form/[FormID]/` 子目录中。
      - **表情锁定**：放入 `Figure/CharaFigure/Lock/` 的立绘将被强制锁定为默认表情，且优先读取。
+    
+     - **若还是搞不清楚的，把autodownload开启，自动下载后去autodownload文件夹看看文件是什么命名**
 
 
 2. **御主头像与立绘**
