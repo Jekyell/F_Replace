@@ -26,7 +26,7 @@
 ### 汉化文件更新
 
 #### 方法一：游戏启动自动更新（推荐）
-直接打开游戏即可自动检查并更新 mapping 仓库，无需打开伴侣 App。
+直接打开游戏即可自动检查并更新 mapping 仓库。
 
 - **开启方法**：在 `Mod/configs/frep.config` 中配置 `AutoMappingDownload=1`（默认 `0` 为关闭）。
 - **忽略文件配置**：如需忽略某些文件或文件夹，请自行创建 `Mod/.gitignore` 并自行配置，语法与 git 仓库 `.gitignore` 完全一致。
