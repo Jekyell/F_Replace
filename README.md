@@ -43,7 +43,7 @@
 
 ### 国服使用说明
 
-国服可开启 `TextReplace`、`MasterDataReplace`、`LocalizationReplace` 与 `ScriptReplace` 进行文本替换。
+国服无需下载mapping仓库的内容。只需要开启 `TextReplace`、`MasterDataReplace`、`LocalizationReplace` 与 `ScriptReplace` 即可进行文本替换。
 - **替换词下载**：下载 [替换词文件](https://t.me/fgomod/598) 后放入 `Mod/F_Replace` 目录。
 - **注意事项**：`FontReplace`（字体替换）在国服不可用，请保持关闭（`0`）。
 
