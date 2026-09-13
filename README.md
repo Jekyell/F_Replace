@@ -164,8 +164,7 @@ Mod/
 | **头像** (`Face`) | `Figure/Faces/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 左上+右上切角 |
 | **状态立绘** (`Status`) | `Figure/Status/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | 不支持动图 |
 | **立绘** (`CharaFigure`) | `Figure/CharaFigure/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | 不支持动图 |
-| **指令卡宝具文本** (`NpText`) | `Figure/CommandCard/NpText/` | `.png` | - | 支持自动下载中文贴图 |
-| **指令卡人物贴图** (`SvtImg`) | `Figure/CommandCard/SvtImg/` | `.png` | - | 支持自动下载 (仅调试) |
+
 
 ### 各类型替换细节说明
 
