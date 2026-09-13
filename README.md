@@ -133,11 +133,11 @@ Mod/
 │   │   └── AutoDownload/       # 自动下载超分图集缓存
 │   ├── Status/                 # 状态详情立绘
 │   │   └── AutoDownload/       # 自动下载超分图集缓存
-│   ├── CommandCard/            # 指令卡相关贴图
+│   ├── CommandCard/            # 指令卡通用文本图片
 │   │   ├── NpText/             # 宝具卡文本图片替换
-│   │   │   └── AutoDownload/   # 自动下载中文宝具卡文本图像
+│   │   │   └── AutoDownload/   # 自动下载中文宝具卡文本缓存
 │   │   └── SvtImg/             # 指令卡人物贴图替换
-│   │       └── AutoDownload/   # 自动下载指令卡从者贴图 (仅调试)
+│   │       └── AutoDownload/   # 自动下载指令卡从者贴图缓存 (仅调试)
 │   ├── Load/                   # 自定义加载图像与动画
 │   └── Master/                 # 御主头像与立绘 (Lock/ 全局锁定, equipXXXXX/ 按礼装)
 ├── Models/                     # 从者战斗模型与贴图
@@ -164,7 +164,8 @@ Mod/
 | **头像** (`Face`) | `Figure/Faces/` | `.mp4`, `.webp`, `.png` | `mp4` → `webp` → `png` | 左上+右上切角 |
 | **状态立绘** (`Status`) | `Figure/Status/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | 不支持动图 |
 | **立绘** (`CharaFigure`) | `Figure/CharaFigure/` | `.png`, `.astc`, `.astc.zstd` | `png` → `astc` → `astc.zstd` | 不支持动图 |
-
+| **指令卡宝具文本** (`NpText`) | `Figure/CommandCard/NpText/` | `.png` | - | 支持自动下载中文贴图 |
+| **指令卡人物贴图** (`SvtImg`) | `Figure/CommandCard/SvtImg/` | `.png` | - | 支持自动下载 (仅调试) |
 
 ### 各类型替换细节说明
 
@@ -187,11 +188,12 @@ Mod/
    - **战斗模型**：放入 `Models/` 目录，加载战斗时自动替换贴图或模型。
    - **宝具动画**：放入 `Np/` 目录，自动替换对应宝具文件。
 
-4. **指令卡相关替换（宝具文本与人物贴图）**
-   - **支持环境**：国服、日服
+4. **指令卡文本图片替换**
+   - 图片放在 `Mod/Figure/CommandCard/` 
+   - 示例文件：https://t.me/fgomod/830
+
+5. **指令卡宝具文本与人物贴图替换**
    - **放置路径**：把需要替换的图片放在 `Mod/Figure/CommandCard/NpText/` 或 `Mod/Figure/CommandCard/SvtImg/` 下。
-     - 增加指令卡宝具文本图片替换功能
-     - 增加指令卡人物贴图替换功能
    - **自动下载配置 (`frep.config`)**：
      - `AutoCommandCardNpCardTextDownload=0`：自动下载中文的宝具卡文本图像到 `CommandCard/NpText/AutoDownload/` 并替换游戏的贴图，国服玩家无需开启。
      - `AutoCommandCardSvtImgDownload=0`：自动下载指令卡上的从者图片到 `CommandCard/SvtImg/AutoDownload/`，除此之外没有任何作用，仅用于调试查看一些从者名称的变体。
@@ -211,6 +213,12 @@ Mod/
    - **示例**：
      - **A · 标准**：打开 atlasacademy 里的一个从者详情，切换到宝具页面，右键右边的宝具卡文本，可以选择新标签打开或者复制 url，得到如 `https://static.atlasacademy.io/CN/Servants/Commands/4000100/card_servant_np.png` 这样的链接，`4000100/card_servant_np` 就是上面的游戏贴图名（运行时），命名为 `4000100.png`。
      - **B · 灵基覆写**：像水摩根两个宝具文本，第二个宝具文本为 `https://static.atlasacademy.io/CN/Servants/Commands/505300/505310.png`，命名为 `505300@505310.png`。
+
+   - **指令卡人物图像替换命名规范**：
+
+    - `<id>@<灵基阶段>.png`
+
+    - 由于从者id变体非常多，部分从者如圣玛修，在从者详情和战斗中的id各不相同，所以不清楚的可以开启AutoCommandCardSvtImgDownload后，去AutoDownload看实际命名
 
 ## 工具与扩展功能
 
