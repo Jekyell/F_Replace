@@ -116,6 +116,7 @@ FPS=60                    # 目标帧率 (UnlockFPS=1 时生效)
 - **日服**：`/sdcard/Android/data/com.aniplex.fategrandorder/files/Mod/`
 - **B 服**：`/sdcard/Android/data/com.bilibili.fatego/files/Mod/`
 - **4399 渠道服**：`/sdcard/Android/data/com.bilibili.fgo.m4399/files/Mod/`
+- **小米**：`/sdcard/Android/data/com.bilibili.fgo.mi/files/Mod/`
 
 ```text
 Mod/
