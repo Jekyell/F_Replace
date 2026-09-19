@@ -301,5 +301,4 @@ Mod/ScriptVoice/
 ## 相关链接
 
 - [Telegram 频道](https://t.me/fgomod)
-- [超分图集全量包](https://t.me/fgomod_1)
 - [模型修改参考 (models.md)](https://github.com/Jekyell/F_Replace/blob/main/models.md)
