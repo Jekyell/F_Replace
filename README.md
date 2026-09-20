@@ -285,17 +285,30 @@ Mod/ScriptVoice/
 
 <br />
 
-- **问题原因**：MuMu 模拟器自带的系统翻译插件 (`com.mumu.acc`) 与本模块发生冲突。
-- **解决方法**：
+* **问题原因**：MuMu 模拟器自带的系统翻译插件 (`com.mumu.acc`) 与本模块发生冲突。
+* **解决方法**：
+
   1. 打开模拟器中的 **MT 管理器**。
   2. 打开侧边栏的 **终端模拟器**。
   3. 输入以下命令禁用该插件：
+
      ```bash
      su
      pm disable com.mumu.acc
      ```
   4. 彻底重启模拟器（需在 Windows 系统托盘右键退出 MuMu 模拟器主程序后重新打开）。
+
 </details>
+
+<details>
+<summary><b>Q: AutoDownload 功能下载很慢或者下载失败怎么办？</b></summary>
+
+<br />
+
+* **解决方法**：挂梯子后再尝试下载。
+
+</details>
+
 
 
 ## 相关链接
