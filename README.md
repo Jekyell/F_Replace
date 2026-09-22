@@ -1,8 +1,5 @@
 # F_Replace
 
-> [!IMPORTANT]
-> **前置要求**：本模块仅支持已获取 Root 权限的 Android 设备或已开启 Root 功能的 Android 模拟器。安装前请确认 Root 权限已正常工作。
-
 ## 目录
 
 - [快速开始](#快速开始)
