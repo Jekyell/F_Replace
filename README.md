@@ -1,4 +1,4 @@
-# F_Replace -（FGOReplace）
+# F_Replace -（FGO Replace）
 
 ## 目录
 
