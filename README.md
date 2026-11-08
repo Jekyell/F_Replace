@@ -115,6 +115,7 @@ FPS=60                    # 目标帧率 (UnlockFPS=1 时生效)
 - **4399 渠道服**：`/sdcard/Android/data/com.bilibili.fgo.m4399/files/Mod/`
 - **小米**：`/sdcard/Android/data/com.bilibili.fgo.mi/files/Mod/`
 - **九游**：`/sdcard/Android/data/com.bilibili.fgo.uc/files/Mod/`
+- **华为**：`/sdcard/Android/data/com.bilibili.fgo.huawei/files/Mod/`
 
 ```text
 Mod/
