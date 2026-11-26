@@ -27,17 +27,17 @@
 
 ### App 内配置与管理
 
-安装模块并在 LSPosed 中勾选对应区服的 FGO 后，打开模块 App 即可通过底部导航栏完成全部日常操作：
+安装模块并在 LSPosed / LSPatch 中作用于对应区服的 FGO 后，打开模块 App 即可完成日常配置（支持 Root，无 Root 时自动使用 Shizuku）：
 
-- **更新页**：一键检查并增量拉取汉化仓库，点击编辑按钮可可视化勾选同步忽略列表（对应 `Mod/.gitignore`）。
+- **更新页（日服）**：一键检查并增量拉取汉化仓库，点击编辑按钮可勾选同步忽略列表（对应 `Mod/.gitignore`）。
 - **配置页**：
   - 标注 **「即时」** 的开关支持游戏运行中热切换生效，无需重启游戏。
   - 标注 **「需重启」** 的开关修改后需重启游戏生效。
 
 > [!IMPORTANT]
-> **无 Root（LSPatch）用户必看**：由于没有 Root 权限，模块 App 无法直接访问游戏私有目录 `/sdcard/Android/data/<包名>/files/Mod/`，因此**无法通过 App 界面修改配置或更新汉化**。
-> - **修改配置**：请手动编辑对应区服目录下的 `Mod/configs/frep.config` 文件（下文的「即时」项在手动保存文件后同样会自动热生效）。
-> - **日服更新汉化**：推荐在 `frep.config` 中手动设置 `AutoMappingDownload=1`，由游戏进程自身在启动时自动更新。
+> **无 Root（LSPatch）用户**：
+> - **推荐使用 Shizuku**：启动并授权 **Shizuku** 后，即可直接通过 App 修改配置、编辑国服替换文本以及更新日服汉化仓库。
+> - **未使用 Shizuku**：请手动编辑对应区服目录下的 `Mod/configs/frep.config`（「即时」项保存后同样自动热生效）；日服推荐设置 `AutoMappingDownload=1` 由游戏启动时自动更新。
 
 ### 汉化文件更新（日服）
 
@@ -61,7 +61,7 @@
 
 国服版本（`FRep_CN`）无需下载日服 mapping 汉化仓库。开启 `TextReplace`、`MasterDataReplace`、`LocalizationReplace` 与 `ScriptReplace` 即可进行反和谐或自定义文本替换；其余图像替换、3D 全息闪卡、动画跳过、帧率解锁、底层性能优化与超分自动下载等功能与日服一致。
 
-- **替换词下载**：下载 [替换词文件](https://t.me/fgomod/924) 后放入 `Mod/F_Replace/` 目录。
+- **替换词配置**：可在 App 内直接编辑（本地不存在时会自动释放内置默认词库至 `Mod/anti_harmony.json`），也可手动下载 [替换词文件](https://t.me/fgomod/924) 放入 `Mod/anti_harmony.json`（兼容旧路径 `Mod/F_Replace/anti_harmony.json`，优先读取前者）。
 - **区服差异**：`FontReplace`（字体替换）、`UIReplace`（UI 图集单精灵替换）、`AutoMappingDownload` 与 `AutoCommandCardNpCardTextDownload` 为日服专属功能，国服无需配置。
 
 <details>
@@ -70,7 +70,12 @@
 ```json
 {
   "global": {
-    "全局通用替换词": "替换词"
+    "全局通用替换词": "替换词",
+    "regex:正则匹配原文": "正则替换结果",
+    "需要反向排除的词": {
+      "value": "替换词",
+      "exclude": ["script", "textreplace"]
+    }
   },
   "localization": {
     "兽": "Beast"
@@ -86,14 +91,14 @@
   }
 }
 ```
-*提示：`textreplace` 覆盖面最广，会捕获当前界面上的所有文本；若不确定所属分类，直接写入 `global` 块即可。*
+*提示：`textreplace` 覆盖面最广，会捕获当前界面上的所有文本；若不确定所属分类，直接写入 `global` 块即可。键名加 `regex:` 前缀可启用正则匹配；`global` 中的规则支持通过 `exclude` 排除指定模块（`masterdata` / `textreplace` / `script` / `localization`）。*
 </details>
 
 ---
 
 ## 配置文件说明 (`frep.config`)
 
-首次启动游戏或打开 App 配置页时，会在 `Mod/configs/` 目录下自动生成 `frep.config` 配置文件（`1` 为开启，`0` 为关闭）。Root（LSPosed）用户推荐直接在 App 配置页可视化修改；**无 Root（LSPatch）用户请手动编辑此文件**：
+首次启动游戏或打开 App 配置页时，会在 `Mod/configs/` 目录下自动生成 `frep.config` 配置文件（`1` 为开启，`0` 为关闭）。Root（LSPosed）与无 Root（LSPatch + Shizuku）用户均推荐直接在 App 配置页可视化修改；未使用 Shizuku 时也可手动编辑此文件：
 
 ```ini
 # ==================== 1. 文本与资源替换 ====================
@@ -167,7 +172,8 @@ Mod/
 ├── .gitignore                  # 自定义忽略更新文件规则 (语法与 Git 一致，可选)
 ├── configs/
 │   └── frep.config             # 模块核心配置文件
-├── F_Replace/                  # 文本/数据替换词库与国服 anti_harmony.json
+├── anti_harmony.json           # 国服文本替换词库 (优先读取，可由 App 可视化编辑)
+├── F_Replace/                  # 文本/数据替换词库 (亦兼容旧路径 F_Replace/anti_harmony.json)
 ├── Font                        # 自定义字体 AssetBundle 文件 (仅日服)
 ├── UI/                         # UI 图集单精灵替换 PNG 目录 (仅日服)
 │   ├── <AtlasName>/            # 指定图集名匹配 (优先)
@@ -269,7 +275,6 @@ Mod/
 
 ## 特色功能指南
 
-
 ### 自定义加载图像与交互编辑
 
 样例参考与下载：[Load 资源样例](https://github.com/Jekyell/F_Replace/releases/tag/load)
@@ -334,6 +339,16 @@ Mod/ScriptVoice/
 ---
 
 ## 常见问题 (FAQ)
+
+<details>
+<summary><b>Q: 无 Root（LSPatch）用户如何通过 App 修改配置？</b></summary>
+
+<br />
+
+* 启动 **Shizuku** 后打开 FRep App 并授予权限即可直接使用（无 Root 时自动走 Shizuku 通道）。
+* *注意：Shizuku 模式下无法访问 `/data/media/0`，保持默认存储路径（`自动` 或 `/storage/emulated/0`）即可。*
+
+</details>
 
 <details>
 <summary><b>Q: MuMu 模拟器国际版启动游戏卡死 / 闪退怎么办？</b></summary>
